@@ -1,0 +1,21 @@
+<table>
+<tr>
+  <th>Prod_Id</th>
+  <th>Category</th>
+  <th>Shipping_price</th>
+  <th>delivery_time</th>
+  <th>price</th>
+  <th>tax</th>
+
+</tr>
+{% for b in obj %}
+<tr>
+  <td>{{ b.productId }}</td>
+  <td>{{ b.category }}</td>
+  <td>{{ b.shippingPrice }}</td>
+  <td>{{ b.deliveryTime }}</td>
+  <td>{{ b.price }}</td>
+  <td>{{ b.tax }}</td>
+</tr>
+{% endfor %}
+</table>
