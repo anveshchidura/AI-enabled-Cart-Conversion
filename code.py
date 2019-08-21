@@ -141,6 +141,16 @@ for i in data5.index:
     elif 0 not in row:
         data5["revenue_generated"][i]=0
 
+
+hi = pd.read_csv("updated_data.csv")
+hi["Revenue_generated"] = data5["revenue_generated"]
+hi.drop("revenue_generated",axis=1)
+hi.to_csv("haha.csv")
+
+
+
+
+
 revenue = list(data5["revenue_generated"])
 y = pd.DataFrame({"revenue_generated" :revenue})
 x = data5.drop("revenue_generated",axis=1)
